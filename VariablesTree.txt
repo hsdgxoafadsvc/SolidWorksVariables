@@ -1,0 +1,17 @@
+
+filespase LeadScrew{
+	"LeadScrew::D"= 8
+	"LeadScrew::d1"= 4.5
+	"LeadScrew::d2"= 2.5
+	"LeadScrew::l1"= 164
+	"LeadScrew::l2"= 32
+	"LeadScrew::l3"= 3
+	"LeadScrew::l4"= 3
+	"LeadScrew::L"= "L@front"
+	}
+filespase Helm{
+	"LeadScrew::d1"= 4.5
+	}
+filespase Сarriage{
+	"LeadScrew::d1"= 4.5
+	}
