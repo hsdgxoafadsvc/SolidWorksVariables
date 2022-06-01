@@ -1,10 +1,17 @@
 #include <iostream>
 #include <conio.h>
-#include <time.h>
 #include <fstream>
 #include <string>
+#include <alogrithm>
 
-using namespace std;
+//using namespace std;
+
+string removeSpaces(string& input)
+{
+	//remove spaces
+	input.erase(std::remove(input.begin(),input.end(),' '),input.end());
+	return input;
+}
 
 int main(){
 
@@ -23,25 +30,26 @@ int main(){
         std::cout << "correct" << std::endl;
     }
     std::string *consoleLine = new std::string;
-
-    // the main application cycle
-
+	*consoleLine = removeSpaces(*consoleLine);
+    
+	// the main application cycle
     while(true){
     std::cout << ">>> ";
-    getline(cin, *consoleLine);
+    sdt::getline(cin, *consoleLine);
 
     if (*consoleLine == "close"){
        data.close();
        break;
     }
-//    if (*consoleLine == "content"){
-//        std::cout << data;
-//    }
-    if (*consoleLine == "journal"){
-        data.close();
-        system("D:\\mainData.txt");
-        break;
+	if (*consoleLine == "update"){
+
     }
+	if (*consoleLine == "workfile"){
+		std::cout << ">>> " << fileName << std::endl;
+	}
+	if (*consoleLine == "show"){
+		
+	}
     else{
         std::cout << ">>> incorrect command" << std::endl;
     }
